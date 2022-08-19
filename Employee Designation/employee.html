@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Employee designation</title>
+    
+</head>
+<body>
+    <label for="employee"> Enter the Employee Name:
+        <input type="text" name="employee" id="employee" value="">    
+        
+    </label>
+    <button type="submit" onClick="findDesignation()"> Find designation</button>
+
+    <script>
+    function findDesignation(){
+
+        let employeeName=document.getElementById("employee").value;
+      
+        if("Alex" == employeeName){
+           console.log(employeeName);
+            document.write( employeeName + " is a Developer");
+        }
+       
+       else if("John" == employeeName){
+           console.log(employeeName);
+            document.write( employeeName + " is an Artist");
+        }
+
+         else if("Strek" == employeeName){
+           console.log(employeeName);
+            document.write( employeeName + " is an Singer");
+        }
+
+        else if("Smith" == employeeName){
+           console.log(employeeName);
+            document.write( employeeName + " is an Actor");
+        }
+
+       else return document.write("Enter valid employee");
+    }
+
+
+    </script>
+</body>
+</html>
